@@ -5,13 +5,17 @@ import os
 def main() :
     print('収集したい画像の名称(名前)を入力してください>>>')
     _keyword = input() 
+
     print("収集したいページ数を入力してください(20枚/ページ)>>>")
     _max_page = input()
+
     search_download(_keyword, _max_page)
 
 def search_download(_keyword, _max_page) :
+
     keyword = _keyword
     max_page = _max_page
+
     print (keyword, max_page)
 
     path = './Export/' + keyword
@@ -51,5 +55,7 @@ def search_download(_keyword, _max_page) :
 
     print('└─  Complete')
 
+
 if __name__ == "__main__" :
     main()
+
